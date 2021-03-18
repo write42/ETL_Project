@@ -1,22 +1,22 @@
-CREATE TABLE video_games(
+CREATE TABLE games(
 	number INT,
 	game VARCHAR,
-	release_date VARCHAR,
-	price INT,
+	release_date DATE,
+	price BIGINT,
 	owners VARCHAR,
 	developer VARCHAR,
 	publisher VARCHAR,
-	average_playtime INT,
-	median_playtime INT,
-	metascore INT,
+	average_playtime BIGINT,
+	median_playtime BIGINT,
+	metascore BIGINT,
 	PRIMARY KEY (game)
 )
 
-CREATE TABLE result(
+CREATE TABLE meta_game(
 	metascore INT,
-	name VARCHAR,
+	game VARCHAR,
 	console VARCHAR,
-	userscore INT,
+	userscore BIGINT,
 	date DATE,
-	FOREIGN KEY name REFERENCES video_games(game)
+	FOREIGN KEY game REFERENCES games(game)
 )
