@@ -10,7 +10,7 @@ CREATE TABLE games(
 	median_playtime BIGINT,
 	metascore BIGINT,
 	PRIMARY KEY (game)
-)
+);
 
 CREATE TABLE meta_game(
 	metascore INT,
@@ -18,5 +18,8 @@ CREATE TABLE meta_game(
 	console VARCHAR,
 	userscore BIGINT,
 	date DATE,
-	FOREIGN KEY game REFERENCES games(game)
-)
+	FOREIGN KEY (game) REFERENCES games(game)
+);
+
+DROP TABLE games;
+DROP TABLE meta_game;
