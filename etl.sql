@@ -18,8 +18,11 @@ CREATE TABLE meta_game(
 	console VARCHAR,
 	userscore BIGINT,
 	date DATE,
-	FOREIGN KEY (game) REFERENCES games(game)
+	PRIMARY KEY (game)
 );
+
+SELECT * FROM games;
+SELECT * FROM meta_game;
 
 DROP TABLE games;
 DROP TABLE meta_game;
