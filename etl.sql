@@ -9,7 +9,7 @@ CREATE TABLE games(
 	average_playtime BIGINT,
 	median_playtime BIGINT,
 	metascore BIGINT,
-	PRIMARY KEY (number)
+	PRIMARY KEY (game)
 );
 
 CREATE TABLE meta_game(
