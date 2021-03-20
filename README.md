@@ -10,7 +10,7 @@ From there in the games dataset, I dropped rows that had NA for metascore, dropp
 In the meta dataset, I filtered out games that weren't on the PSVita.
 
 # Load
-I decided to upload this data onto PgAdmin. When I joined the tables, from the cleaned games dataset I included the game, price, owners, and developer columns. From the cleaned meta dataset I chose the console, metascore, and userscore columns. I had decided to work on video games sales data up to 2018. I'm also interested in owning a PSVita and would like to know what games are good. 
+I decided to upload this data via PgAdmin onto PostGres. When I joined the tables, from the cleaned games dataset I included the game, price, owners, and developer columns. From the cleaned meta dataset I chose the console, metascore, and userscore columns. I had decided to work on video games sales data up to 2018. I'm also interested in owning a PSVita and would like to know what games are good. 
 
 
 Definitions of games column names used:
