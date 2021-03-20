@@ -2,7 +2,7 @@ CREATE TABLE games(
 	number INT,
 	game VARCHAR,
 	release_date DATE,
-	price BIGINT,
+	price DECIMAL,
 	owners VARCHAR,
 	developer VARCHAR,
 	publisher VARCHAR,
@@ -13,10 +13,10 @@ CREATE TABLE games(
 );
 
 CREATE TABLE meta_game(
-	metascore INT,
+	metascore DECIMAL,
 	game VARCHAR,
 	console VARCHAR,
-	userscore BIGINT,
+	userscore DECIMAL,
 	date DATE,
 	PRIMARY KEY (game)
 );
@@ -24,5 +24,6 @@ CREATE TABLE meta_game(
 SELECT * FROM games;
 SELECT * FROM meta_game;
 
+--If running jupyter notebook more than once in a row, drop tables,create them again, then run notebook.
 DROP TABLE games;
 DROP TABLE meta_game;
